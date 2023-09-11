@@ -1,9 +1,9 @@
 #include <iostream>
 #include <argparse.h>
-#include <threads.h>
 #include <io.h>
 #include <chrono>
 #include <cstring>
+#include "threads.h"
 #include "operators.h"
 #include "helpers.h"
 #include "prefix_sum.h"
@@ -51,10 +51,12 @@ int main(int argc, char **argv)
         }
     }
     else {
-        //start_threads(threads, opts.n_threads, ps_args, <your function>);
+        init(ps_args);
+        start_threads(threads, opts.n_threads, ps_args, compute_prefix);
 
         // Wait for threads to finish
         join_threads(threads, opts.n_threads);
+        clean_up(ps_args);
     }
 
     //End timer and print out elapsed

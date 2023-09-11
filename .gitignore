@@ -1,0 +1,6 @@
+.vscode/*
+project1/bin
+project1/tests
+project1/*.png
+project1/*.csv
+project1/*.txt
