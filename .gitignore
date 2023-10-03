@@ -4,3 +4,9 @@ project1/tests
 project1/*.png
 project1/*.csv
 project1/*.txt
+project2/sequential
+project2/cuda_basic
+project2/cuda_shmem
+project2/thrust
+project2/result/*
+**/*.pyc
