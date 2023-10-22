@@ -9,4 +9,7 @@ project2/cuda_basic
 project2/cuda_shmem
 project2/thrust
 project2/result/*
+project3/golden/*
+project3/result/*
 **/*.pyc
+
