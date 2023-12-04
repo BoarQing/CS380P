@@ -13,4 +13,6 @@ project3/golden/*
 project3/result/*
 project4/target/
 project4/logs/
+project5/workspace/build
+project5/output
 **/*.pyc
